@@ -25,9 +25,9 @@ Each comment includes:
 
 Example structure:
 
-text| publishedAt| likeCount
-this song saved my life| 2023-10-12| 45
-i feel so alone tonight| 2023-10-13| 12
+text| publishedAt| likeCount  
+this song saved my life| 2023-10-12| 45  
+i feel so alone tonight| 2023-10-13| 12  
 
 ---
 
@@ -72,9 +72,9 @@ This model classifies comments as:
 
 Example result:
 
-comment| sentiment| confidence
-this song saved me| positive| 0.99
-i feel empty| negative| 0.97
+comment| sentiment| confidence  
+this song saved me| positive| 0.99  
+i feel empty| negative| 0.97  
 
 Implementation is performed using the Hugging Face Transformers library with batch processing.
 
@@ -88,12 +88,12 @@ A basic detection step identifies comments containing suicide-related language.
 
 Example keywords:
 
-suicide
-suicidal
-kill myself
-want to die
-end my life
-can't go on
+suicide  
+suicidal  
+kill myself  
+want to die  
+end my life  
+can't go on  
 
 A new feature is created:
 
@@ -101,9 +101,9 @@ suicide_signal = True / False
 
 Example:
 
-comment| suicide_signal
-i feel suicidal tonight| True
-this song helped me| False
+comment| suicide_signal  
+i feel suicidal tonight| True  
+this song helped me| False  
 
 This allows further analysis of high-risk comment patterns.
 
@@ -119,13 +119,13 @@ BERTopic
 
 Pipeline:
 
-Text
-↓
-Sentence Transformer embeddings
-↓
-Clustering
-↓
-Topic extraction (c-TF-IDF)
+Text  
+↓  
+Sentence Transformer embeddings  
+↓  
+Clustering  
+↓  
+Topic extraction (c-TF-IDF)  
 
 Embedding model:
 
@@ -133,11 +133,11 @@ all-MiniLM-L6-v2
 
 Example topics:
 
-topic| keywords
-Breakup| love, miss, ex
-Loneliness| alone, nobody, cry
-Nostalgia| childhood, memories
-Gratitude| saved, helped
+topic| keywords  
+Breakup| love, miss, ex  
+Loneliness| alone, nobody, cry  
+Nostalgia| childhood, memories  
+Gratitude| saved, helped  
 
 ---
 
@@ -166,8 +166,8 @@ Shows the proportion of positive vs negative comments.
 
 Example:
 
-Positive: 55%
-Negative: 45%
+Positive: 55%  
+Negative: 45%  
 
 ---
 
@@ -204,9 +204,9 @@ YouTube comments include like counts, which can be used to measure community eng
 
 Example analysis:
 
-type| avg likes
-normal comments| 3
-suicide signal comments| 15
+type| avg likes  
+normal comments| 3  
+suicide signal comments| 15  
 
 ---
 
@@ -222,8 +222,8 @@ Examples:
 
 Example visualization:
 
-Daily sentiment score
-Daily suicide signal rate
+Daily sentiment score  
+Daily suicide signal rate  
 
 
 ## German Comments Analysis
@@ -244,16 +244,16 @@ Translation enables consistent analysis using English NLP models.
 
 Python libraries used in the project:
 
-Python
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-PyTorch
-Hugging Face Transformers
-Sentence Transformers
-BERTopic
+Python  
+pandas  
+numpy  
+matplotlib  
+seaborn  
+scikit-learn  
+PyTorch  
+Hugging Face Transformers  
+Sentence Transformers  
+BERTopic  
 
 ---
 
@@ -261,20 +261,20 @@ Project Structure
 
 youtube-comment-nlp-analysis
 
-analysisData/
+analysisData/  
     depression_results.csv
 
-rawData/
+rawData/  
     youtube_comments.csv
 
-notebooks/
-    01_data_collection.ipynb
-    02_sentiment_analysis.ipynb
-    03_topic_modeling.ipynb
+notebooks/  
+    01_data_collection.ipynb  
+    02_sentiment_analysis.ipynb  
+    03_topic_modeling.ipynb  
 
-results/
-    figures/
-    topic_visualizations/
+results/  
+    figures/  
+    topic_visualizations/  
 
 README.md
 
