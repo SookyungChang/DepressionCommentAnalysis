@@ -259,7 +259,7 @@ BERTopic**
 
 ## Project Structure
 
-**DepressionCommentAnalysis
+DepressionCommentAnalysis
 
 analysisData/  
     depression_results.csv
@@ -276,6 +276,6 @@ results/
     figures/  
     topic_visualizations/  
 
-README.md**
+README.md
 
 ---
