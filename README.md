@@ -244,7 +244,7 @@ Translation enables consistent analysis using English NLP models.
 
 Python libraries used in the project:
 
-Python  
+*Python  
 pandas  
 numpy  
 matplotlib  
@@ -253,26 +253,26 @@ scikit-learn
 PyTorch  
 Hugging Face Transformers  
 Sentence Transformers  
-BERTopic  
+BERTopic*  
 
 ---
 
-Project Structure
+## Project Structure
 
-youtube-comment-nlp-analysis
+DepressionCommentAnalysis
 
-analysisData/  
+*analysisData/ * 
     depression_results.csv
 
-rawData/  
+*rawData/ * 
     youtube_comments.csv
 
-notebooks/  
+*notebooks/  *
     01_data_collection.ipynb  
     02_sentiment_analysis.ipynb  
     03_topic_modeling.ipynb  
 
-results/  
+*results/  *
     figures/  
     topic_visualizations/  
 
