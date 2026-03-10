@@ -183,7 +183,7 @@ Bar chart showing the most common topics detected by BERTopic.
 
 ---
 
-## Work in Process
+## Work in Progress
 
 ### Comment Length Analysis
 
